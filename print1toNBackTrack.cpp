@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-void func(int i, int n)
+void func(int i)
 {
   if (i < 1)
   {
@@ -9,7 +9,7 @@ void func(int i, int n)
   }
   else
   {
-    func(i - 1, n);
+    func(i - 1);
     cout << i << endl;
   }
 }
@@ -18,6 +18,6 @@ int main()
   int n;
   cout << "Enter N";
   cin >> n;
-  func(100, n);
+  func(n);
   return 0;
 }
